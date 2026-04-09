@@ -22,3 +22,20 @@ Hello
 >>> print('Hi') if 7>6 else print('Hello')
 Hi
 >>>
+general languauge :-
+=====================
+1g : Binary Level or Machine Level
+2g : Assembly Level 
+3g : Mid Level (c,c++)
+4g : HLL is 4rth generation (Programming English Like) (python,java,php,javascript)
+5g : SQL is 5th generation
+
+HLL : High Level Langauge 
+C and Assembly, COBOL, FORTRAN 
+
+Dynamic :-
+=========
+In Industry we have 2 types of PL 
+1. Statically typed = type declaration is mendatory
+2. Dynamically typed = type declaration is not mendatory
+
