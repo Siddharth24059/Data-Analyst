@@ -1,0 +1,11 @@
+python program
+
+# This is single line comment.
+# wap in python to print hello world.
+
+# comments : are the lines which are not executed by the python interpreter. we can write comments in single line or multi line.
+
+print('Hello World')
+print("Hello world")
+print("""Hello World in triple double quotes""")
+print('''Hello World in triple single quotes''')
