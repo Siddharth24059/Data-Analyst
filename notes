@@ -13,3 +13,12 @@ you can use python for web development,
 Enterprise Application, GUI Applications, Web Based Application, Emdedded Application, Data Application,
 Intelligent System, IOT Use, Education college and school 9th and 10th Python CBSE and ICSE 
 Python is All Rounder.
+Simple : the langauage or syntax or rules of program in python is very easy, it is like writing English. it is easy to learn 
+Even a Nursery Level or LKG Student Code in Python.
+
+Eg:-
+>>> print('Hi') if 5>6 else print('Hello')
+Hello
+>>> print('Hi') if 7>6 else print('Hello')
+Hi
+>>>
