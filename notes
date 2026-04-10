@@ -38,4 +38,12 @@ Dynamic :-
 In Industry we have 2 types of PL 
 1. Statically typed = type declaration is mendatory
 2. Dynamically typed = type declaration is not mendatory
+C/C++/Java langauge :-
+int x = 20;
+x = "Awnish" <----- it will give error.
+
+Dynamically typed or Dynamic semantics.
+x = 20 
+x = True 
+x = "Ravi"
 
