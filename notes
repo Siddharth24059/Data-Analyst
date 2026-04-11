@@ -71,6 +71,19 @@ java -> JVM (Java Virtual Machine)
 
 .Java ---> code -> compile -> using javac -> 
 bytecode --> .class --> jvm ---> execute.
+due to this feature is java is said to be Plateform 
+independent 
+
+Python -> PVM (Python virtual Machine)
+.py ---> code ---> compile ---> .pyc <compiled python code> -> bytecode -> execute -> 
+
+python is also plateform Independent.
+All Intepreted lanaguge are scripting in nature.
+
+scripting language = Intepreted + Dynamic semantics
+PHP = Intepreter + Dynamic
+Javascript = Intepreter + Dynamic
+
 
 
 
