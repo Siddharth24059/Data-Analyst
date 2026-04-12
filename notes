@@ -88,6 +88,13 @@ Difference B/w compiled and Interpreter :-
 ===========================================
 Similarlity : Translator.
 Differences
+compiler :-
+1. Code compiles/convert at once.
+2. Code convert a intemediate code will be generated
+3. Compiler it is experts 
+4. it is slower in the execution.
+
+
 
 
 
