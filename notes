@@ -84,6 +84,10 @@ scripting language = Intepreted + Dynamic semantics
 PHP = Intepreter + Dynamic
 Javascript = Intepreter + Dynamic
 
+Difference B/w compiled and Interpreter :-
+===========================================
+Similarlity : Translator.
+Differences
 
 
 
