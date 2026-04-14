@@ -94,6 +94,13 @@ compiler :-
 3. Compiler it is experts 
 4. it is slower in the execution.
 
+p1.c --> p1.o --> p1.exe 
+p1.py ---> .pyc ---> execute 
+
+Interpeter:-
+1. Code is coverted line by line 
+2. execution is faster 
+3. No Intermediate file is changed.
 
 
 
