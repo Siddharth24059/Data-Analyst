@@ -11,6 +11,7 @@ print("""Hello World in triple double quotes""")
 print('''Hello World in triple single quotes''')
 
 
+# program n o 1
 
 import keyword as kw
 
@@ -21,7 +22,7 @@ print('Total Keyword in python:',len(kw.kwlist))
 # keywords : are the special words reserved in python for writing code 
 
 
-
+# program no 3
 
 print(10) #constant value
 print(20) #constant value 
@@ -58,7 +59,7 @@ full name = 'Ravi kumar'
 full_name = 'Shankar Nigam'
 
 
-
+# program no 4
 
 # primitive  types 
 # type() : used to get type of the value.
