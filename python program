@@ -10,35 +10,6 @@ print("Hello world")
 print("""Hello World in triple double quotes""")
 print('''Hello World in triple single quotes''')
 
-
-# program n o 1
-
-import keyword as kw
-
-print(kw.kwlist)
-print('Total Keyword in python:',len(kw.kwlist))
-
-# There are 35 Keyword in python
-# keywords : are the special words reserved in python for writing code 
-
-# program no 2 
-
-
-print('Line 1')
-#print('Line 2')
-print('Line 3')
-print('Line 4')
-#print('Line 5') ---------> single line comment 
-
-''' -------------- multi line commment
-print('Line 6')
-print('Line 7')
-print('Line 8')
-'''
-
-
-
-
 # program no 3
 
 print(10) #constant value
