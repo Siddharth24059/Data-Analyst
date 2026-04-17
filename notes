@@ -104,7 +104,18 @@ Interpeter:-
 
 p1.py --Interpreter-> execute 
 
-Python is a Object Oriented : you make your class and Objects. 
+Python is a Object Oriented : you make your class and Objects.
+
+History:-
+==========
+1. Python was release in 1991 by guido van Raossum.
+2. Python was never Intentional.
+3. Python is no where related to snakes.
+4. Python Named is derived from a very famous british Circus Tv - Show Monty Circus "Python" Show.
+5. Python has 2 version 
+	1. Python legacy : 2000 (2.x)
+	2. Python Modern Version : 3.x 
+	Latest Version Version : 3.13.x
 
 
 
