@@ -110,7 +110,7 @@ print(type(s2))
 '''
 
 
-
+# program no 5
 
 # Collection datatypes : They are not primitive in nature.
 # Collection datatypes are those datatypes those types which have can be used 
