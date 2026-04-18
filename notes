@@ -134,3 +134,12 @@ python --version
 VS code of local Development
 https://www.programiz.com/python-programming/online-compiler/
 
+
+modules and package    
+what are modules and packages
+module:-
+every python file is itself a module.
+we can export the class name, function name ,object name ,variable constants in the global scope
+and can be then imported in any other considering this file as a module.
+
+
