@@ -156,3 +156,25 @@ now if we want to execute the module as well then we can use the concept main ex
 
 every file which is executed called the __main__instance.
 
+packages:-
+
+
+collection of multiple modules put in a  folder is said to be packageds.
+
+
+xyz
+
+a.py ->m1
+b.py ->m2
+c.py ->m3
+
+
+sub package : folder inside folder   
+pqr
+
+xyz
+a.py
+b.py
+c.py
+
+
