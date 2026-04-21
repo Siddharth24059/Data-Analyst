@@ -143,3 +143,16 @@ we can export the class name, function name ,object name ,variable constants in 
 and can be then imported in any other considering this file as a module.
 
 
+every module can have two types of functionality
+
+
+1. can  be exported a module
+
+2. can be executed as a program
+
+
+now if we want to execute the module as well then we can use the concept main execution
+
+
+every file which is executed called the __main__instance.
+
