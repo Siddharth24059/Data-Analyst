@@ -5,11 +5,11 @@
 # for we use package called as pydantic : data validation and settings management using python type annotations
 
 
-#x= 'Awnish' # type of x is str
+#x= 'Siddharth' # type of x is str
 # var_name : data_type = value
 
 
-x : str = 'Awnish'
+x : str = 'Siddharth'
 print(x)
 print(type(x))
 
@@ -23,7 +23,7 @@ print(type(x))
 
 # # from typing import Union
 
-# # x:Union[str,int] = 'Awnish'
+# # x:Union[str,int] = 'Siddharth'
 # # print(x)
 # print(type(x))
 
