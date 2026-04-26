@@ -5,11 +5,11 @@
 # for we use package called as pydantic : data validation and settings management using python type annotations
 
 
-#x= 'Awnish' # type of x is str
+#x= 'Siddharth' # type of x is str
 # var_name : data_type = value
 
 
-# x : int = 'Awnish'
+# x : int = 'Siddharth'
 # print(x)
 # print(type(x))
 
