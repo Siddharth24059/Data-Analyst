@@ -1,0 +1,21 @@
+import time
+# sleep : in order to add delay.
+# This delay on Horizontal is called snortting Effect.
+# wap in python to fix snortting effect.
+# python -u <file.py>
+
+print('========= Timer started======')
+start_time = time.time()
+print('start time:',start_time)
+
+for i in range(10):
+    print('Hello => ',i,end='')
+    time.sleep(2)
+
+print()
+print('========= Timer ended======')
+
+end_time = time.time()
+print('End Time',end_time)
+delay = round(end_time - start_time,2)
+print('Total delay in Seconds:',delay)
