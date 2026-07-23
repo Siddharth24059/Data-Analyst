@@ -1,0 +1,482 @@
+If we want to work with sql we need to install mysql server 
+1. we can xampp server 
+2. or 
+we can install mysql workbench.
+DB Weaver it is client 
+
+Moral of the story if any client want to connect to database server 
+we need following things 
+1. hostname or ip : 127.0.0.1 or localhost
+2. database name : mydb
+3. username : root 
+4. password : ""
+5. port : 3306 
+
+what is SQL :-
+1. it is 5g langauge in HLL.
+2. it was intially realease with name SEQUEL.
+3. The founder name of DR EF Codd, RDBMS 12 Rules. Codd's Rule
+   name = SEQUEL => patent => Register 
+   
+   SEQUEL was already registered
+   vowels -> E,U,E 
+   SQL 
+   https://www.geeksforgeeks.org/dbms/codds-rules-in-dbms/
+   https://dbeaver.io/download/
+4. SQL : structured Query lanaguge.(RDBMS -> data is in structred form.)
+
+   
+4. -SQL was official release on 1986 ANSI standard
+   -SQL was release again on 1987 ISO standard
+
+EF code gave 12 Rules.
+=======================
+in this he gave some keywords 
+1. Relational -> The database will store in form of rows and columns of tabular   layout.
+
+- Relation : table 
+- Record : tuple 
+- columns : attributes or field value.
+degree : totol of columns(n)
+cardinality : Total no of rows(n)
+
+Note : Every column has different properties for datatype,size,null,default 
+       constraints : datatype,size,null,default 
+	   All properties can be defined by space sperated.
+	   
+	   Enter your name(*) ______Awnish_______
+	   Enter the Address _________________
+	   
+	   Field which is required -> not null 
+	   Field which is optional -> null 
+	   
+	   id -> auto_increment 
+	   id -> primary key 
+	   
+	   
+
+-- DDL : Data Definition Langauge.
+
+-- creating the databases
+create database db2;
+
+-- How to show the database 
+show databases;
+
+-- using any perticular database 
+use analytics_db;
+use test
+
+-- drop the database 
+drop database db2 
+
+-- creating the table 
+use analytics_db;
+create table emp(
+ emp_id int(11) not null primary key auto_increment,
+ emp_name varchar(100) not null,
+ dept_name varchar(50) not null,
+ salary decimal(10,2) null
+);
+
+
+-- How to the tables 
+show tables
+
+-- How to see the definition of the table
+describe emp 
+desc emp
+
+show columns from emp
+-- How to see full information schema of the table
+show full columns from emp;
+
+-- dropping or destroying the table
+drop table emp;
+
+-- DML : Data Manupulation Lanauge (update,view,delete,truncate,insert) or DQL : Data Query Langauge (select)
+-- How to insert the data in table 
+
+insert into emp(emp_name,dept_name,salary) values('Kamal','Engineer',1000);
+-- How to the Record of the particular table 
+select emp_id,emp_name,dept_name,salary from emp;
+
+-- Changing the order of the columns 
+select emp_name,dept_name,salary,emp_id from emp;
+
+-- if there n of columsn and you want to select any speicific column 
+   select * from emp;
+
+-- I want to select any specific Record 
+   select * from emp where emp_name = 'Awnish'
+   
+-- How can I target a speicific Awnish/Record 
+   select * from emp where emp_id = 2
+   
+-- if you have selected any speicific Record you can update it or delete it 
+   select * from emp where emp_id = 2
+-- How to delete the specific Record
+   delete from emp where emp_id = 2
+   
+-- Bulk Insert in databases 
+   insert into emp(emp_name,dept_name,salary) values('Vimal','HR',1500);
+   insert into emp(emp_name,dept_name,salary) values('Nirmal','ADMIN',1000);
+   insert into emp(emp_name,dept_name,salary) values('Pratap','TESTER',500);
+   
+   select * from emp;
+   
+  
+   -- This concept is Bulk Insert.
+   insert into emp(emp_name,dept_name,salary) values
+   ('Katrina','HR',1500),
+   ('Kareena','FINANCE',2000),
+   ('Alina','HR',1200);
+
+
+	-- How to update the Record 
+  --  update single multipl columns
+    update emp set emp_name='Katrina ji',salary=3000 where emp_id = 8;
+    select * from emp;
+   
+   -- Only update single column
+   update emp set emp_name='Karina' where emp_id = 8;
+  -- Only update single column
+   update emp set salary=2000 where emp_id = 8;
+  
+  -- Note without where Entire table will be effected.
+  select * from emp where emp_id = 8; -- Matching Record. no of rows filter
+  
+  -- Not Remove where clause
+  select * from emp; -- for entire table.
+  
+  -- Increment Every Body salary with 500 Rs 
+   select * from emp where emp_id = 7;
+   update emp set salary = salary + 500 where emp_id = 7;
+  
+   update emp set salary = salary + 500;
+   select * from emp
+   
+   -- delete the Records 
+   select * from emp where emp_id = 8;
+   delete from emp where emp_id = 8;
+  
+  -- delete All 
+  select * from emp;
+  delete from emp;
+ 
+  -- Donto every Run delete without where Clause 
+  -- We have learned about crud 
+  -- C : created , R:read(select) , d = delete one or all, u = update one or all.
+ 
+ Day 2:-
+ ======
+-- DDL : Data Definition Langauge.
+
+-- creating the databases
+create database db2;
+
+-- How to show the database 
+show databases;
+
+-- using any perticular database 
+use analytics_db;
+use test
+
+-- drop the database 
+drop database db2 
+
+-- creating the table 
+use analytics_db;
+create table emp(
+ emp_id int(11) not null primary key auto_increment,
+ emp_name varchar(100) not null,
+ dept_name varchar(50) not null,
+ salary decimal(10,2) null
+);
+
+
+-- How to the tables 
+show tables
+
+-- How to see the definition of the table
+describe emp 
+desc emp
+
+show columns from emp
+-- How to see full information schema of the table
+show full columns from emp;
+
+-- dropping or destroying the table
+drop table emp;
+
+-- DML : Data Manupulation Lanauge (update,view,delete,truncate,insert) or DQL : Data Query Langauge (select)
+-- How to insert the data in table 
+
+insert into emp(emp_name,dept_name,salary) values('Kamal','Engineer',1000);
+-- How to the Record of the particular table 
+select emp_id,emp_name,dept_name,salary from emp;
+
+-- Changing the order of the columns 
+select emp_name,dept_name,salary,emp_id from emp;
+
+-- if there n of columsn and you want to select any speicific column 
+   select * from emp;
+
+-- I want to select any specific Record 
+   select * from emp where emp_name = 'Awnish'
+   
+-- How can I target a speicific Awnish/Record 
+   select * from emp where emp_id = 2
+   
+-- if you have selected any speicific Record you can update it or delete it 
+   select * from emp where emp_id = 2
+-- How to delete the specific Record
+   delete from emp where emp_id = 2
+   
+-- Bulk Insert in databases 
+   insert into emp(emp_name,dept_name,salary) values('Vimal','HR',1500);
+   insert into emp(emp_name,dept_name,salary) values('Nirmal','ADMIN',1000);
+   insert into emp(emp_name,dept_name,salary) values('Pratap','TESTER',500);
+   
+   select * from emp;
+   
+  
+   -- This concept is Bulk Insert.
+   insert into emp(emp_name,dept_name,salary) values
+   ('Katrina','HR',1500),
+   ('Kareena','FINANCE',2000),
+   ('Alina','HR',1200);
+
+
+	-- How to update the Record 
+  --  update single multipl columns
+    update emp set emp_name='Katrina ji',salary=3000 where emp_id = 8;
+    select * from emp;
+   
+   -- Only update single column
+   update emp set emp_name='Karina' where emp_id = 8;
+  -- Only update single column
+   update emp set salary=2000 where emp_id = 8;
+  
+  -- Note without where Entire table will be effected.
+  select * from emp where emp_id = 8; -- Matching Record. no of rows filter
+  
+  -- Not Remove where clause
+  select * from emp; -- for entire table.
+  
+  -- Increment Every Body salary with 500 Rs 
+   select * from emp where emp_id = 7;
+   update emp set salary = salary + 500 where emp_id = 7;
+  
+   update emp set salary = salary + 500;
+   select * from emp
+   
+   -- delete the Records 
+   select * from emp where emp_id = 8;
+   delete from emp where emp_id = 8;
+  
+  -- delete All 
+  select * from emp;
+  delete from emp;
+ 
+  -- Donto every Run delete without where Clause 
+  -- We have learned about crud 
+  -- C : created , R:read(select) , d = delete one or all, u = update one or all.
+
+  -- Aliasing concept in sql : 
+  -- giving another temporary name to any table, or any column.
+  -- in order make alias we are going to use `as` keyword
+  -- as keyword is optional 
+ 
+ 
+   select emp_id,emp_name from emp
+   select emp_id as id,emp_name as name from emp -- we have as keyword
+   describe emp
+   select emp_id id,emp_name name from emp -- as but it optional
+   
+   -- use case of the alias 
+   select emp_id as id, dept_name as dept from emp
+   select emp_id as id, dept_name as dept,emp_name as name, length(emp_name) as character_count from emp;
+   select emp_id as id, dept_name as dept from emp as e
+   
+   -- fully qualified name 
+    select emp.emp_id as id, emp.dept_name as dept from emp
+    select e.emp_id as id, e.dept_name as dept from emp as e
+    
+    -- what is order of execution 
+    -- from and then select 
+    
+   -- views : it is a kind of abstraction (instead of creating a new table what we do we create a view of this table)
+   -- salary : confidential 
+    
+    create view employee as (
+    	select emp_id,emp_name,dept_name from emp
+    );
+   
+   show tables
+   describe employee
+   
+   select * from employee
+    
+   -- dual table : dual table special tabele with 1 Row x 1 column
+   select 2+2 as result from dual;
+   select curdate() as today from dual; 
+   select current_time() as todays_time from dual;
+   select now() as date_and_time from dual;
+   
+   -- optional dual table 
+   select 2+2 as result;
+   select curdate() as today;
+   select current_time() as todays_time;
+   select now() as date_and_time;
+  
+  
+  select * from emp;
+  insert into emp(emp_name,dept_name,salary) values('Pankaj','ADMIN',7000);
+  select 'Dhoni','ADMIN',10000;
+  select 'Dhoni' as name ,'ADMIN' as dept,10000 as salary;
+ 
+  insert into emp(emp_name,dept_name,salary) select 'Dhoni','ADMIN',10000;
+  insert emp(emp_name,dept_name,salary) select 'Azhar','Engineer',8000;
+  
+  -- DQL : Data Query langauge 
+  -- All Record 
+  select * from emp;
+  -- filter on the basis of the where condition 
+  -- where clause with operators 
+  select * from emp where salary = 2000
+  select * from emp where salary > 2000
+  select * from emp where salary >= 2000
+  select * from emp where salary < 2000
+  select * from emp where salary <= 2000
+  
+   -- How to select the not matching condition 
+  select * from emp where salary != 2000 
+  select * from emp where salary <> 2000 -- widely used 
+  
+  -- How to insert null value 
+   insert into emp(emp_name,dept_name,salary) values
+  ('Amit','TESTER',NULL),
+  ('Anuj','HR',NULL),
+  ('Ajay','SALES',NULL);
+ 
+  
+    select * from emp;
+ -- How to insert empty values in the row 
+ -- empty can be null or not null
+   insert into emp(emp_name,dept_name,salary) values('Salman','',NULL)
+ 
+  -- How to the find the blank values 
+    select * from emp where dept_name = ''
+    select * from emp where dept_name <> ''
+   
+   -- How to find NULL and Not null 
+     select * from emp where salary = null -- invalid
+     select * from emp where salary != null  -- Invalid 
+     
+     -- for null we use is null 
+     select * from emp where salary is null -- invalid
+     select * from emp where salary is not null  -- Invalid 
+     
+    -- in and not in 
+    -- in and not in is used when you want the filter the data on the basis 
+    -- the given list of items 
+    -- Note for list of item we use ()
+    -- id in (11,15,19,13)   
+     
+     select * from emp where emp_id in (11,15,19,13);
+     select * from emp where emp_id not in (11,15,19,13);
+    
+     -- How to include Null with in
+     select * from emp where emp_id in (11,15,19,13,NULL);
+     select * from emp where salary in (1000,2000,NULL); -- Invalid 
+     -- null should be used as or
+     select * from emp where salary in (1000,2000) or salary is null;
+     select * from emp where salary not in (1000,2000) or salary is not null;
+    
+    -- Between Operator : we want to find the data in some given Range 
+    select * from emp where salary between  2000 and 7000;
+    -- Inserting the Record to match the Range b/w 2000 to 7000
+    insert into emp(emp_name,dept_name,salary) values
+    ('Shivi','CEO',3000),
+    ('Kivi','CTO',4000);
+   
+    -- How to select the range without Between Operator 
+     select * from emp where salary >= 2000 and salary <= 7000;
+    
+    -- How to combine multiple columns using and and or 
+    -- using or 
+    -- select those emp where department sales or HR also salary is < 5000
+    select * from emp where dept_name in ('HR','SALES') or salary < 5000;
+    select * from emp where dept_name in ('HR','SALES') and salary < 5000;
+  
+   -- Searching or like operator 
+   -- wild character
+   -- * : All Columns 
+   -- % (anything) and - (1) digit match exactly any as per digit 
+   
+   -- pre and post 
+   -- A% : must start from A but could be anything from A-z 
+   -- A--- : must start from A and there should be exactly 4 digit and could 
+   -- aything 
+   -- %A : starting could be anything but must end by A 
+   
+   select * from emp;
+   select * from emp where emp_name like 'am%';
+   select * from emp where emp_name like '%i';
+   select * from emp where emp_name like '%am%';
+   
+  select * from emp where emp_name like 'A%';
+  select * from emp where emp_name like 'A___';
+  select * from emp where emp_name like 'A___%';
+  
+ -- How to sort the data on the basis of ascending order and descending order 
+ -- order by column name ascending = asc and desc 
+ 
+ select * from emp order by salary asc;
+ select * from emp order by salary desc;
+
+-- filter with sorting 
+ select * from emp where salary is not null;
+ select * from emp where salary is not null order by salary desc;
+ select * from emp where salary is not null order by salary asc;
+ 
+-- Limit is used to add limit to the result set 
+ select * from emp where salary is not null; -- Total rows 9 
+ -- How to count 
+ select count(*) from emp where salary is not null;
+
+ -- Add limit upto 4 Rows 
+ select * from emp where salary is not null 
+ limit 4
+ 
+  -- adding offset : start 
+ select * from emp where salary is not null
+ limit 4 offset 2
+
+ 
+ 
+  
+    
+     
+    
+    
+   
+  
+  
+ 
+   
+   
+   
+  
+   
+   
+    
+   
+  
+  
+  
+  
+  
+  
+
