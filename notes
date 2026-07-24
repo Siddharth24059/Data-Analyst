@@ -183,6 +183,42 @@ after python version 3.5.x it is mandatory that  a package should contain a spec
 
 
 
+pdbc (python database connectivity)
 
+
+1.pdbc starts for the python database connectivity.
+2.this concept remains same in every programmiing language like java: jdbc
+
+3.in pdbc other python application will connect to real time database like ( mysql,sqlserver,oracle or postgressql,Ssqlite)
+4.it is a database driver which is convert python calls to databse calls and databse calls to python native calls.
+
+python app<---------------->Databse
+           <-----request-----> 
+	   <-----response---->
+
+# python sent request to databse for like read ,insert ,delete the databse reponse it .
+
+ which type of database : it is always RDBS relational database management system  (sql)
+ databse: mysql
+ for nosql for eg mongodb ,dynamodb,redis,rabbitmqt ,memcache,couchdb,cassendra,bhive,hbase,we have different driver.
+ 
+ database is a technology that at server level.
+ in order to make any system server we need server wala software.
+ 
+ 1. mysql database
+ 2.server (IIS,ngnix,apache) in all world this are three types of servers .
+ 3. sql client (sql workbench,phpmyadmin,mysql terminal,heidisql)
+ 
+ 
+ we are aware that software technology is platform dependent.
+ 
+ os: windows   mysql.exe
+ linux: ubantu  mysql.deb or mysql.rpm
+ macos: apple mysql.app
+ 
+ any configuration in app made for one type of platform will be changed when we deploy the application
+ to the server because there can be the chance that ,server and local system may have different configuration .
+  
+  
 __init__.py : can be blank but this file must exist
  importance: the code written in this file  is automatically called as package imported.
