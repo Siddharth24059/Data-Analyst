@@ -178,3 +178,11 @@ b.py
 c.py
 
 
+rules of package:  foldername shoudld not contain any special character no spaces , it should be lower case but module can be upper lower case or combination .
+after python version 3.5.x it is mandatory that  a package should contain a special file called __init__.py
+
+
+
+
+__init__.py : can be blank but this file must exist
+ importance: the code written in this file  is automatically called as package imported.
