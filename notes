@@ -275,3 +275,13 @@ xampp: cross platform amp stack,perl
 
  atom consist of isolated duracle 
   
+in relational databse data is stored in table format.
+in non relational database data is stored in document form typically key value pair
+it is stored in json bson format.
+
+we require special module or package for working with mysql
+
+
+
+the very first step is to download xampp server which has sql server preinstalled.
+after installing xampp make sure apache is running and mysql server is running
