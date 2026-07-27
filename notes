@@ -285,3 +285,24 @@ we require special module or package for working with mysql
 
 the very first step is to download xampp server which has sql server preinstalled.
 after installing xampp make sure apache is running and mysql server is running
+
+
+
+
+by Default configuration :-
+
+
+Apache: port 80
+host: localhost
+
+IP Address: 127.0.0.1
+mysql:3306
+
+
+
+xampp server:
+http://localhost:5000/
+
+
+in order to accesss database we login into the phpmyadmin interface:
+http://localhost:5000/phpmyadmin
