@@ -306,3 +306,18 @@ http://localhost:5000/
 
 in order to accesss database we login into the phpmyadmin interface:
 http://localhost:5000/phpmyadmin
+
+
+
+
+in phpmyadmin
+1. create database
+2. inside database create the table 
+    always whenever you create a table there should be +1 field this field is primary key 
+    eg: name,age,and id
+
+
+    datatype of columns
+    name:varchar(199)
+    age:int(11)
+    id: int(11): primary key and auto increment 
