@@ -316,6 +316,16 @@ in phpmyadmin
     always whenever you create a table there should be +1 field this field is primary key 
     eg: name,age,and id
 
+3. we want to connect our python application with databse.
+ in order to connect python application with mysql database we ned a special python database connector library
+
+ mysql-connector-python
+
+we have 3 types of libraries
+1. pymysql (lightweight)
+2.mysql-connector-python (official)
+3.sqlAlchemy(better for production application): it support multiple database.
+   it can work with (oracle,postgressql,sqlserver,mysql).
 
     datatype of columns
     name:varchar(199)
