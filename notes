@@ -327,6 +327,17 @@ we have 3 types of libraries
 3.sqlAlchemy(better for production application): it support multiple database.
    it can work with (oracle,postgressql,sqlserver,mysql).
 
+
+installing  mysql-connector-python
+==========================================================
+python -m venv myenv (personal environment)
+pip install mysql-connector-python
+
+python -m pdbc.p1
+
+
+we can change sql configuration between 3306 to 3310 in   my.ini 
+
     datatype of columns
     name:varchar(199)
     age:int(11)
